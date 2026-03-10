@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Birthday from './Birthday.svelte';
+	import BirthdayForm from './BirthdayForm.svelte';
 	import type { IBirthday } from './types';
 
 	export let data: { birthdays: IBirthday[] };
@@ -13,6 +14,11 @@
 		</li>
 	{/each}
 </ol>
+
+<h1>Add a new birthday</h1>
+<div>
+	<BirthdayForm />
+</div>
 
 <style>
     ol {
